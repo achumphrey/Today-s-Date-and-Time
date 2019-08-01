@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         Date date = Calendar.getInstance().getTime();
      //   DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        DateFormat dateFormat = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+     //   DateFormat dateFormat = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
         strDate = dateFormat.format(date);
 
    /*     TextView textView = findViewById(R.id.tv_date);
