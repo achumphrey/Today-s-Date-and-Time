@@ -30,24 +30,14 @@ public class MainActivity extends AppCompatActivity {
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
         strDate = dateFormat.format(date);
 
-   /*     TextView textView = findViewById(R.id.tv_date);
-        textView.setText(strDate);*/
-    /*    System.out.println("Converted String: " + strDate);
-        Log.i("Todays Date: ", strDate);*/
-        btn_date.setOnClickListener(new View.OnClickListener() {
+           btn_date.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("date", strDate);
                 startActivity(intent);
-
             }
         });
-    /*    Intent intent = new Intent(this, SecondActivity.class);
-        intent.putExtra("date", intent);*/
-
-
-
     }
 }

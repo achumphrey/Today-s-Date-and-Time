@@ -15,6 +15,6 @@ public class SecondActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.tv_date);
 
         Intent intent = getIntent();
-        textView.setText("Today's Date and Time is:\n" + intent.getStringExtra("date"));
+        textView.setText(intent.getStringExtra("date"));
     }
 }
